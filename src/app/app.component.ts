@@ -7,6 +7,14 @@ import { HomePage } from '../pages/home/home';
 import { AlertsPage } from '../pages/alerts/alerts';
 import { ActionSheetsPage } from '../pages/action-sheets/action-sheets';
 import { BadgesPage } from '../pages/badges/badges';
+import { ButtonsPage } from '../pages/buttons/buttons';
+import { CardsPage } from '../pages/cards/cards';
+import { CheckboxsPage } from '../pages/checkboxs/checkboxs';
+import { DatetimesPage } from '../pages/datetimes/datetimes';
+import { FabsPage } from '../pages/fabs/fabs';
+import { GesturesPage } from '../pages/gestures/gestures';
+import { GridPage } from '../pages/grid/grid';
+import { IconsPage } from '../pages/icons/icons';
 
 @Component({
   templateUrl: 'app.html'
@@ -27,6 +35,14 @@ export class MyApp {
       { title: 'Alerts', component: AlertsPage },
       { title: 'Action Sheets', component: ActionSheetsPage },
       { title: 'Badges', component: BadgesPage },
+      { title: 'Buttons', component: ButtonsPage },
+      { title: 'Cards', component: CardsPage },
+      { title: 'Checkboxs', component: CheckboxsPage },
+      { title: 'Datetimes', component: DatetimesPage },
+      { title: 'FABs', component: FabsPage },
+      { title: 'Gestures', component: GesturesPage },
+      { title: 'Grid', component: GridPage },
+      { title: 'Icons', component: IconsPage },
     ];
   }
 
