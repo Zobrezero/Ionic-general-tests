@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {
+  IonicPage,
+  NavController,
+  NavParams
+} from 'ionic-angular';
 
 /**
  * Generated class for the ButtonsPage page.
@@ -9,17 +13,22 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  */
 
 @IonicPage()
-@Component({
+@Component(
+{
   selector: 'page-buttons',
   templateUrl: 'buttons.html',
 })
-export class ButtonsPage {
+export class ButtonsPage
+{
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams
+    )
+  {}
 
-  ionViewDidLoad() {
+  ionViewDidLoad()
+  {
     console.log('ionViewDidLoad ButtonsPage');
   }
-
 }

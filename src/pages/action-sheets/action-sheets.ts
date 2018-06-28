@@ -14,41 +14,52 @@ import {
  */
 
 @IonicPage()
-@Component({
+@Component(
+{
   selector: 'page-action-sheets',
   templateUrl: 'action-sheets.html',
 })
-export class ActionSheetsPage {
-
+export class ActionSheetsPage
+{
   constructor(
   	public navCtrl: NavController,
   	public navParams: NavParams,
     public actionSheetCtrl: ActionSheetController
-    ) { }
+    )
+  {}
 
-  ionViewDidLoad() {
+  ionViewDidLoad()
+  {
     console.log('ionViewDidLoad ActionSheetsPage');
   }
 
-  presentActionSheet() {
-    const actionSheet = this.actionSheetCtrl.create({
-      title: 'Modify your album',
-      buttons: [
+  presentActionSheet()
+  {
+    const actionSheet = this.actionSheetCtrl.create(
+    {
+      title: 'Modifica tu album',
+      buttons:
+      [
         {
-          text: 'Destructive',
+          text: 'Destruir',
           role: 'destructive',
-          handler: () => {
+          handler: () =>
+          {
             console.log('Destructive clicked');
           }
-        },{
-          text: 'Archive',
-          handler: () => {
+        },
+        {
+          text: 'Archivar',
+          handler: () =>
+          {
             console.log('Archive clicked');
           }
-        },{
-          text: 'Cancel',
+        },
+        {
+          text: 'Cancelar',
           role: 'cancel',
-          handler: () => {
+          handler: () =>
+          {
             console.log('Cancel clicked');
           }
         }

@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {
+	IonicPage,
+  NavController,
+  NavParams
+} from 'ionic-angular';
 
 /**
  * Generated class for the FabsPage page.
@@ -9,17 +13,21 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  */
 
 @IonicPage()
-@Component({
+@Component(
+{
   selector: 'page-fabs',
   templateUrl: 'fabs.html',
 })
-export class FabsPage {
+export class FabsPage
+{
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams
+    )
+  {}
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
-
-  ionViewDidLoad() {
+  ionViewDidLoad()
+  {
     console.log('ionViewDidLoad FabsPage');
   }
-
 }

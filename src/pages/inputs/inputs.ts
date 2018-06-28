@@ -6,7 +6,7 @@ import {
 } from 'ionic-angular';
 
 /**
- * Generated class for the IconsPage page.
+ * Generated class for the InputsPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -15,13 +15,11 @@ import {
 @IonicPage()
 @Component(
 {
-  selector: 'page-icons',
-  templateUrl: 'icons.html',
+  selector: 'page-inputs',
+  templateUrl: 'inputs.html',
 })
-export class IconsPage
+export class InputsPage
 {
-  public myIcon: string = "home";
-
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams
@@ -30,6 +28,6 @@ export class IconsPage
 
   ionViewDidLoad()
   {
-    console.log('ionViewDidLoad IconsPage');
+    console.log('ionViewDidLoad InputsPage');
   }
 }

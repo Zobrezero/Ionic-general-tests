@@ -5,50 +5,61 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>datetimes</ion-title>
+    <ion-title>
+      Demo: Datetime
+    </ion-title>
   </ion-navbar>
-
 </ion-header>
-
 
 <ion-content padding>
   <ion-list>
     <ion-item>
-      <ion-label>Start Date</ion-label>
+      <ion-label>
+        Start Date
+      </ion-label>
       <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.month"></ion-datetime>
     </ion-item>
-
-
     <ion-item>
-      <ion-label>Start Time</ion-label>
+      <ion-label>
+        Start Time
+      </ion-label>
       <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="event.timeStarts"></ion-datetime>
     </ion-item>
-
     <ion-item>
-      <ion-label>Ends</ion-label>
+      <ion-label>
+        Ends
+      </ion-label>
       <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.timeEnds"></ion-datetime>
     </ion-item>
-
     <button ion-item>
-      <ion-label>Repeat</ion-label>
-      <ion-note item-end>Never</ion-note>
+      <ion-label>
+        Repeat
+      </ion-label>
+      <ion-note item-end>
+        Never
+      </ion-note>
     </button>
-
     <button ion-item>
-      <ion-label>Travel Time</ion-label>
-      <ion-note item-end>None</ion-note>
+      <ion-label>
+        Travel Time
+      </ion-label>
+      <ion-note item-end>
+        None
+      </ion-note>
     </button>
   </ion-list>
-
   <ion-list>
     <button ion-item>
-      <ion-label>Alert</ion-label>
-      <ion-note item-end>None</ion-note>
+      <ion-label>
+        Alert
+      </ion-label>
+      <ion-note item-end>
+        None
+      </ion-note>
     </button>
   </ion-list>
 </ion-content>

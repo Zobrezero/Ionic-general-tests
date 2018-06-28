@@ -14,101 +14,120 @@ import {
  */
 
 @IonicPage()
-@Component({
+@Component(
+{
   selector: 'page-alerts',
   templateUrl: 'alerts.html',
 })
-export class AlertsPage {
-
+export class AlertsPage
+{
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
     public alertCtrl: AlertController
-    ) { }
+    )
+  {}
 
-  ionViewDidLoad() {
+  ionViewDidLoad()
+  {
     console.log('ionViewDidLoad AlertsPage');
   }
 
-  showAlert() {
-    const alert = this.alertCtrl.create({
-      title: 'New Friend!',
-      subTitle: 'Your friend, Obi wan Kenobi, just accepted your friend request!',
+  showAlert()
+  {
+    const alert = this.alertCtrl.create(
+    {
+      title: 'Nuevo amigo!',
+      subTitle: 'Tú amigo, Obi wan Kenobi, ha aceptado tu solicitud de amistad!',
       buttons: ['OK']
     });
     alert.present();
   }
 
-  showPrompt() {
-    const prompt = this.alertCtrl.create({
-      title: 'Login',
-      message: "Enter a name for this new album you're so keen on adding",
-      inputs: [
+  showPrompt()
+  {
+    const prompt = this.alertCtrl.create(
+    {
+      title: 'Inicio de sesión',
+      message: "Ingresa un nomre para el nuevo álbum",
+      inputs:
+      [
         {
           name: 'title',
-          placeholder: 'Title'
+          placeholder: 'Título'
         },
       ],
-      buttons: [
+      buttons:
+      [
         {
-          text: 'Cancel',
-          handler: data => {
+          text: 'cancelar',
+          handler: data =>
+          {
             console.log('Cancel clicked');
           }
         },
         {
-          text: 'Save',
-          handler: data => {
+          text: 'guardar',
+          handler: data =>
+          {
             console.log('Saved clicked');
           }
-        }
+        },
       ]
     });
     prompt.present();
   }
 
-  showConfirm() {
-    const confirm = this.alertCtrl.create({
+  showConfirm()
+  {
+    const confirm = this.alertCtrl.create(
+    {
       title: 'Use this lightsaber?',
       message: 'Do you agree to use this lightsaber to do good across the intergalactic galaxy?',
-      buttons: [
+      buttons:
+      [
         {
           text: 'Disagree',
-          handler: () => {
+          handler: () =>
+          {
             console.log('Disagree clicked');
           }
         },
         {
           text: 'Agree',
-          handler: () => {
+          handler: () =>
+          {
             console.log('Agree clicked');
           }
-        }
+        },
       ]
     });
     confirm.present();
   }
 
-  showRadio() {
+  showRadio()
+  {
     let alert = this.alertCtrl.create();
-    alert.setTitle('Lightsaber color');
-
-    alert.addInput({
+    alert.setTitle('Elige un color');
+    alert.addInput(
+    {
       type: 'radio',
-      label: 'Blue',
+      label: 'Azúl',
       value: 'blue',
       checked: true
     });
-    alert.addInput({
+    alert.addInput(
+    {
       type: 'toggle',
-      label: 'Red',
+      label: 'Rojo',
       value: 'red'
     });
-
-    alert.addButton('Cancel');
-    alert.addButton({
+    alert.addButton('Cancelar');
+    alert.addButton(
+    {
       text: 'OK',
-      handler: data => {
+      handler: data =>
+      {
         // this.testRadioOpen = false;
         // this.testRadioResult = data;
       }
@@ -116,27 +135,29 @@ export class AlertsPage {
     alert.present();
   }
 
-  showCheckbox() {
+  showCheckbox()
+  {
     let alert = this.alertCtrl.create();
-    alert.setTitle('Which planets have you visited?');
-
-    alert.addInput({
+    alert.setTitle('Que planetas has visitado?');
+    alert.addInput(
+    {
       type: 'checkbox',
-      label: 'Alderaan',
+      label: 'Mercurio',
       value: 'value1',
       checked: true
     });
-
-    alert.addInput({
+    alert.addInput(
+    {
       type: 'checkbox',
-      label: 'Bespin',
+      label: 'Venus',
       value: 'value2'
     });
-
-    alert.addButton('Cancel');
-    alert.addButton({
-      text: 'Okay',
-      handler: data => {
+    alert.addButton('Cancelar');
+    alert.addButton(
+    {
+      text: 'Ok',
+      handler: data =>
+      {
         console.log('Checkbox data:', data);
         // this.testCheckboxOpen = false;
         // this.testCheckboxResult = data;

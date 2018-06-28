@@ -5,30 +5,17 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>cards</ion-title>
+    <ion-title>
+      Demo: Card
+    </ion-title>
   </ion-navbar>
-
 </ion-header>
 
-
 <ion-content padding>
-  <h4>Basic Usage</h4>
-  <ion-card>
-    <ion-card-header>
-      Card Header
-    </ion-card-header>
-    <ion-card-content>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consectetur optio provident ut quam tempora illo ipsum deleniti temporibus doloremque, facilis odio quis excepturi repellendus, mollitia maxime iste voluptas cupiditate.
-    </ion-card-content>
-  </ion-card>
-  <br>
-  <br>
-  <h4>card header</h4>
   <ion-card>
     <ion-card-header>
       Header
@@ -39,7 +26,9 @@
   </ion-card>
   <br>
   <br>
-  <h4>List in card</h4>
+  <h4>
+    Listado en una tarjeta:
+  </h4>
   <ion-card>
     <ion-card-header>
       Explore Nearby
@@ -55,77 +44,138 @@
       </button>
       <button ion-item>
         <ion-icon name="cafe" item-start></ion-icon>
-        Cafe
+        Café
       </button>
     </ion-list>
   </ion-card>
   <br>
   <br>
-  <h4>images in card</h4>
+  <h4>
+    Imágenes en una tarjeta:
+  </h4>
   <ion-card>
-      <img src="assets/imgs/badge.jpg"/>
-      <ion-card-content>
-        <ion-card-title>
-          Nine Inch Nails Live
-          </ion-card-title>
-        <p>
-          The most popular industrial group ever, and largely
-          responsible for bringing the music to a mass audience.
-        </p>
-      </ion-card-content>
+    <img src="assets/imgs/badge.jpg"/>
+    <ion-card-content>
+      <ion-card-title>
+        Nine Inch Nails Live
+      </ion-card-title>
+      <p>
+        The most popular industrial group ever, and largely
+        responsible for bringing the music to a mass audience.
+      </p>
+    </ion-card-content>
   </ion-card>
   <br>
   <br>
-  <h4>background images</h4>
+  <h4>
+    Tarjeta con imágenes de fondo:
+  </h4>
   <ion-card class="card-background-image">
     <img src="assets/imgs/card-saopaolo.png"/>
-    <div class="card-title">São Paulo</div>
-    <div class="card-subtitle">41 Listings</div>
+    <div class="card-title">
+      São Paulo
+    </div>
+    <div class="card-subtitle">
+      41 Listings
+    </div>
   </ion-card>
   <ion-card class="card-background-image">
     <img src="assets/imgs/card-amsterdam.png"/>
-    <div class="card-title">Amsterdam</div>
-    <div class="card-subtitle">64 Listings</div>
+    <div class="card-title">
+      Amsterdam
+    </div>
+    <div class="card-subtitle">
+      64 Listings
+    </div>
   </ion-card>
   <ion-card class="card-background-image">
     <img src="assets/imgs/card-sf.png"/>
-    <div class="card-title">San Francisco</div>
-    <div class="card-subtitle">72 Listings</div>
+    <div class="card-title">
+      San Francisco
+    </div>
+    <div class="card-subtitle">
+      72 Listings
+    </div>
   </ion-card>
   <ion-card class="card-background-image">
     <img src="assets/imgs/card-madison.png"/>
-    <div class="card-title">Madison</div>
-    <div class="card-subtitle">28 Listings</div>
+    <div class="card-title">
+      Madison
+    </div>
+    <div class="card-subtitle">
+      28 Listings
+    </div>
   </ion-card>
   <br>
   <br>
   <br>
-  <h1>Advance cards</h1>
+  <h1>
+    Tarjetas avanzadas:
+  </h1>
   <br>
-  <h4>Social cards</h4>
+  <ion-card>
+    <img src="assets/imgs/badge.jpg"/>
+    <ion-card-content>
+      <ion-card-title>
+        Björk
+      </ion-card-title>
+      <p>
+        Björk first came to prominence as one of the lead vocalists of the avant pop Icelandic sextet the Sugarcubes, but when...
+      </p>
+    </ion-card-content>
+    <ion-item>
+      <ion-icon name='logo-twitter' item-start style="color: #55acee"></ion-icon>
+      Followers
+      <ion-badge item-end>
+        260k
+      </ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-icon name='musical-notes' item-start style="color: #d03e84"></ion-icon>
+        Albums
+      <ion-badge item-end>
+        9
+      </ion-badge>
+    </ion-item>
+  </ion-card>
+  <br>
+  <br>
+  <h4>
+    Tarjetas sociales:
+  </h4>
   <ion-card>
     <ion-item>
       <ion-avatar item-start>
         <img src="assets/imgs/marty-avatar.png">
       </ion-avatar>
-      <h2>Marty McFly</h2>
-      <p>November 5, 1955</p>
+      <h2>
+        Marty McFly
+      </h2>
+      <p>
+        November 5, 1955
+      </p>
     </ion-item>
     <img src="assets/imgs/advance-card-bttf.png">
     <ion-card-content>
-      <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
+      <p>
+        Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.
+      </p>
     </ion-card-content>
     <ion-row>
       <ion-col>
         <button ion-button icon-start clear small>
           <ion-icon name="thumbs-up"></ion-icon>
-          <div>12 Likes</div>
+          <div>
+            12 Likes
+          </div>
         </button>
       </ion-col>
       <ion-col>
         <button ion-button icon-start clear small>
           <ion-icon name="text"></ion-icon>
-          <div>4 Comments</div>
+          <div>
+            4 Comments
+          </div>
         </button>
       </ion-col>
       <ion-col center text-center>

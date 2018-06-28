@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {
+  IonicPage,
+  NavController,
+  NavParams
+} from 'ionic-angular';
 
 /**
  * Generated class for the GesturesPage page.
@@ -9,12 +13,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  */
 
 @IonicPage()
-@Component({
+@Component(
+{
   selector: 'page-gestures',
   templateUrl: 'gestures.html',
 })
-export class GesturesPage {
-
+export class GesturesPage
+{
   public taps: number = 0;
   public presses: number = 0;
   public pans: number = 0;
@@ -22,39 +27,42 @@ export class GesturesPage {
   public rotates: number = 0;
   public pinches: number = 0;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams
+    )
+  {}
 
-  ionViewDidLoad() {
+  ionViewDidLoad()
+  {
     console.log('ionViewDidLoad GesturesPage');
   }
 
-  
   tapEvent(event)
   {
     this.taps++;
   }
-  
+
   pressEvent(event)
   {
     this.presses++;
   }
-  
+
   panEvent(event)
   {
     this.pans++;
   }
-  
+
   swipeEvent(event)
   {
     this.swipes++;
   }
-  
+
   rotateEvent(event)
   {
     this.rotates++;
   }
-  
+
   pinchEvent(event)
   {
     this.pinches++;

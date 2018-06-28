@@ -17,6 +17,11 @@ import { FabsPage } from '../pages/fabs/fabs';
 import { GesturesPage } from '../pages/gestures/gestures';
 import { GridPage } from '../pages/grid/grid';
 import { IconsPage } from '../pages/icons/icons';
+import { InputsPage } from '../pages/inputs/inputs';
+import { ListsPage } from '../pages/lists/lists';
+import { LoadingsPage } from '../pages/loadings/loadings';
+import { ModalsPage } from '../pages/modals/modals';
+import { NavigationsPage } from '../pages/navigations/navigations';
 
 @NgModule({
   declarations: [
@@ -32,6 +37,11 @@ import { IconsPage } from '../pages/icons/icons';
     GesturesPage,
     GridPage,
     IconsPage,
+    InputsPage,
+    ListsPage,
+    LoadingsPage,
+    ModalsPage,
+    NavigationsPage,
   ],
   imports: [
     BrowserModule,
@@ -51,6 +61,11 @@ import { IconsPage } from '../pages/icons/icons';
     GesturesPage,
     GridPage,
     IconsPage,
+    InputsPage,
+    ListsPage,
+    LoadingsPage,
+    ModalsPage,
+    NavigationsPage,
   ],
   providers: [
     StatusBar,
